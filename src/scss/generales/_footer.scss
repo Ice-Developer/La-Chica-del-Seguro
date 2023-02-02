@@ -1,0 +1,105 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(51, 50, 50);
+    height: 90px;
+    width: 100%;
+    color: rgb(124, 123, 123);
+    font-family: raleway;
+    border-top: 4px #14446b solid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    .hst2{
+        width: 252px;
+        @media (max-width:600px){
+            display: none;
+
+        }
+
+    }
+    .rS{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        @media (max-width:600px){
+            justify-content: center;
+        }
+
+        
+    }
+    .iconRS{
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: right;
+        padding: 10px 10px 8px;
+        a{
+            display: inline-flex;
+            text-decoration: none;
+            font-size: 25px;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 10px;
+            z-index: 1;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(45deg,#dab8b2,#14446b);
+                border-radius: 50%;
+                transition: 0.3s ease-in;
+                z-index: -1;
+            }
+            &:hover::before{
+                transform: scale(0);
+            }
+            i{
+                transition: 0.3s ease-in;
+            }
+            &:hover i{
+                background: linear-gradient(45deg,#dab8b2,#14446b);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: scale(2.2);
+            }
+        }
+    }
+    .hst{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        width: 252px;
+        p{
+            margin:0;
+            height: min-content;
+            font-size: 12px;
+        }
+        @media (max-width:600px){
+            display: none;
+        }
+    }
+    .develop{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 12px;
+            a{
+                text-decoration: none;
+                color: rgb(124, 123, 123);
+            }
+            p{
+
+                margin: 0;
+            }
+    }
+}

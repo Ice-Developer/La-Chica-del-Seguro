@@ -1,0 +1,41 @@
+.pgt p{
+    font-family: raleway;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    @media (max-width:400px){
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }
+}
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: raleway;
+    color: white;
+    margin-bottom: 50px;
+    gap: 20px; 
+    @media(max-width:800px){
+        flex-direction: column;
+        gap: 30px;
+    }
+        p strong{
+        font-size: 120%; 
+        }
+    .tarjeta1{
+        @extend %tarjSld;
+        
+    }
+    .tarjeta2{
+        @extend %tarjSld;
+        
+    }
+    .tarjeta3{
+        @extend %tarjSld;       
+}
+}

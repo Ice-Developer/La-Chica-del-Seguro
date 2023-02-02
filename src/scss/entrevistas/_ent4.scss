@@ -1,0 +1,14 @@
+.entrevista4{
+    @include entrevistaVideo(entrevista4);
+    .reproductor4{
+        @extend %reproductor;
+        img{
+            &:hover{
+                @extend %repDivImgHover;
+            }
+        }
+        iframe{
+            @extend %repIfram;
+        }
+    }
+}

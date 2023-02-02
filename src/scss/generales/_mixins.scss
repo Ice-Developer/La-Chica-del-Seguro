@@ -1,0 +1,139 @@
+@mixin btnYTPrp ($pad, $mar){
+    padding: $pad;
+    margin: $mar;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+@mixin btnYTPrp_a ($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+    text-decoration: none;
+    color: white;
+} 
+
+@mixin inputCont ($altura, $marInf){
+    height: $altura;
+    margin-bottom: $marInf;
+    width:400px;
+    font-family: raleway;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+@mixin btnContPlane ($translX, $pR, $pL) {
+    padding: 10px;
+    padding-right: $pR;
+    padding-left: $pL;
+    color: transparent;
+    transform: translatex($translX);
+    transition-duration: 1s;
+}
+@mixin btnContPlaneHover ($translX) {
+    transform: translatex($translX);
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    color: #14446b;
+}
+
+@mixin btnPropFx ($dis, $jCont, $aI, $ancho) {
+    display: $dis;
+    justify-content: $jCont;
+    align-items: $aI;
+    text-align: center;
+    padding: 20px;
+    width: $ancho;
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 20px 40px;
+    }
+    & a:hover{
+        background-position: 100% 0;
+        transition: all .8s ease-in-out;
+        color: #14446b;
+    }
+    
+    input{
+        text-decoration: none;
+        color:white;
+    }
+    & input:hover{
+        background-position: 100% 0;
+        transition: all .8s ease-in-out;
+        color: #14446b;
+    }
+    
+}
+    @mixin btnFx ($tLetra, $altura){
+        background-image: linear-gradient(to right, #14446b, #7d4b8a, #db9fd1, #dab8b2);
+        box-shadow: 0 4px 15px 0 rgba(164, 123, 202, 0.75);
+        font-family: raleway;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: $tLetra;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        height: $altura;
+        text-align:center;
+        border: none;
+        background-size:300% 100%;
+        border-radius: 50px;
+        transition: all .8s ease-in-out;
+        &:hover {
+            background-position: 100% 0;
+            transition: all .8s ease-in-out;
+        }
+        &:focus {
+            outline: none;
+        }
+    } 
+
+    @mixin entrevistaAudio ($gridA) {
+        grid-area: $gridA;
+        display: flex;
+        margin: 10px;
+        width:456px;
+        height: 140px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;    
+    }
+    @mixin entrevistaVideo ($gridA) {
+        grid-area: $gridA;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 500px;
+        height: 350px;
+        
+    }
+    @mixin sld ($mt, $mb){
+        width: 80%;
+        font-family: raleway;
+        color: white;
+        margin-top: $mt;
+        margin-bottom: $mb; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-weight: bolder;
+            font-size: 48px;
+        }
+        p{
+            font-size: 22.4px;
+            margin: 0;
+            @media(max-width: 800px){
+                font-size:100%;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    
+    

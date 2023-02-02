@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cotiza tu seguro de viaje">
+    <meta name="keywords" content="seguro de viaje, travel insurance, asistencia al viajero, seguro de salud, asistencia en viaje">
+    <title>La Chica del Seguro - Cotiza tu Seguro</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+  <nav class="navegador">
+    <p class="nombreEmpresa">La Chica del Seguro</p>
+    <i class="fa-solid fa-bars"></i>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/academia.html">La Academia</a></li>
+            <li><a href="../pages/cotizaciones.html">Cotiza tu Seguro</a></li>
+            <li><a href="../pages/servicios.html">Serv Personalizados</a></li>
+            <li><a href="../pages/medios.html">Mica en los Medios</a></li>
+            <li><a href="../pages/contactos.html">Contacto</a></li>
+        </ul>
+        
+</nav>
+    <header></header>
+    <main>
+      <div class="ppalCot">
+        <div class="sldCot" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+            <h2>Cotiza tu Seguro de viaje</h2>
+            <p >Completa el formulario y accederás a mis mejores propuestas</p>
+            <p >para que puedas tener el viaje de tus sueños</p>
+            <p >sin preocuparte por nada más</p>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade w-100" data-bs-interval="2000" data-bs-ride="carousel" mt="100">
+          <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="../assets/img/carrousel/img_carrousel_1.jpg" class="d-block w-100 " alt="img seguro de viaje">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" >
+              <img src="../assets/img/carrousel/img_carrousel_2.jpg" class="d-block w-100" alt="img seguro de viaje">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" >
+              <img src="../assets/img/carrousel/img_carrousel_3.jpg" class="d-block w-100" alt="img seguro de viaje">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../assets/img/carrousel/img_carrousel_4.jpg" class="d-block w-100" alt="img seguro de viaje">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../assets/img/carrousel/img_carrousel_5.jpg" class="d-block w-100" alt="img seguro de viaje">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../assets/img/carrousel/img_carrousel_6.jpg" class="d-block w-100" alt="img seguro de viaje">
+            </div>
+          </div>
+        </div>
+          <form action="" class="formCot" data-aos="fade-up" data-aos-duration="1500">
+                <input class="inp" type="text"  placeholder="Nombre completo:" required>
+                <input class="inp" type="email"  placeholder="Email:" required >
+                <input class="inp" type="text"  placeholder="Nacionalidad:" required>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input class="inp" type="date" id="nacimiento" required>
+                <input class="inp" type="text"  placeholder="Edad cumplida:" required>
+                <input class="inp" type="text"  placeholder="Teléfono de contacto (con código de área y país):" required>
+                <label for="fechaini">Fecha de inicio del viaje</label>
+                <input class="inp" type="date" id="fechaini" required>
+                <label for="fechafin">Fecha de finalización del viaje</label>
+                <input class="inp" type="date" id="fechafin" required>
+                <select required>
+                  <option selected>Que región o país visitará?</option>
+                  <option value="1">Europa</option>
+                  <option value="2">America del Norte</option>
+                  <option value="3">America del Sur</option>
+                  <option value="4">Asia / Africa / Oceania</option>
+                  <option value="5">Caribe</option>
+                  <option value="6">Turismo Interno(Solo para pasajeros argentinos)</option>
+                </select>
+                <select required>
+                  <option selected>Que tipo de viaje realizará?</option>
+                  <option value="1">Visa Estudiantil</option>
+                  <option value="2">Visa Work and Holiday</option>
+                  <option value="3">Vacaciones (menos de 90 días)</option>
+                  <option value="4">Vacaiones (menos de 30 días)</option>
+                  <option value="5">Expatriación (Radicación definitiva fuera de su país de origen)</option>
+                </select>
+              <div class="formR" >
+                <h5>Situación actual?</h5>
+                <div class="radio">
+                  <label for="flexRadioDefault1">
+                    Viajo desde mi país de origen
+                  </label>
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                </div>
+                <div class="radio">
+                  <label for="flexRadioDefault2">
+                    Ya me encuentro en viaje
+                  </label>
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked >
+                </div>
+              </div>
+              <div class="btnCTPrp">
+                  <input class="btnCT" type="submit" value="Solicitar Cotización" ></input>
+              </div>
+        </form>
+      </div>      
+    </main>
+    <aside></aside>
+    <footer>
+      <div class="rS">
+          <div class="hst2"></div>
+          <div class="iconRS">
+              <a href="https://www.instagram.com/lachica.delseguro/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/lachicadelseguro" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/channel/UCWMN85pySeJnhBZphdOTRWw" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="hst">
+              <p>#LaChicadelSeguro #TribuSegura</p>
+              <p>#ConcienciaAseguradora</p>
+          </div>
+      </div>
+      <div class="develop">
+          <p>Diseñada por <a href="https://github.com/Ice-Developer">Ice Developer</a> | Copyright © 2022 La chica del seguro</p>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once:true
+        });
+    </script>
+</body>
+</html>
